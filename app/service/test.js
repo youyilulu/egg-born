@@ -8,8 +8,11 @@ class TestService extends Service {
     this.config = this.app.config.test;
   }
 
-  async get(id) {
-    return { id, name: this.config.key };
+  async set(key, value) {
+    return this.app.cache.retrieve('redis').set(key, value);
+  }
+  async get(key) {
+    return this.app.cache.retrieve('redis').get(key);
   }
 }
 

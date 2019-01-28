@@ -19,7 +19,7 @@ describe('test/framework.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('framework-example_123456')
+      .expect('cache redis')
       .expect(200);
   });
 });

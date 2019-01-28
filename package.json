@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "egg": "^2.3.0"
+    "egg": "^2.3.0",
+    "redis": "~2.8.0",
+    "egg-born-cache": "../egg-born-cache",
+    "egg-born-core": "../egg-born-core"
   },
   "devDependencies": {
     "autod": "^3.0.1",

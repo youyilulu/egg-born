@@ -4,8 +4,10 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    const data = await this.service.test.get(123);
-    this.ctx.body = data.name;
+    const key = 'greet';
+    await this.service.test.set(key, 'cache redis');
+    const data = await this.service.test.get(key);
+    this.ctx.body = data;
   }
 }
 

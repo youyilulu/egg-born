@@ -1,3 +1,4 @@
 'use strict';
 
-module.exports = require('./lib/framework.js');
+exports.Application = require('./lib/application');
+exports.Agent = require('./lib/agent');

@@ -18,5 +18,9 @@ module.exports = appInfo => {
     },
   };
 
+  config.logger = {
+    level: 'DEBUG',
+  };
+
   return config;
 };

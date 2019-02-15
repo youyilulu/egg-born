@@ -26,5 +26,5 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 
 ## ToDos
 
-- [ ] add a redis api proxy to operation js object
-- [ ] redis cache make value from string to js object
+- [x] add a redis api proxy to operation js object
+- [x] redis cache make value from string to js object

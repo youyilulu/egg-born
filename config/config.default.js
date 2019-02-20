@@ -18,6 +18,11 @@ module.exports = appInfo => {
     },
   };
 
+  // plugin egg-born-passport-jwt
+  config.passportJwt = {
+    secret: '123',
+  };
+
   config.logger = {
     level: 'DEBUG',
   };

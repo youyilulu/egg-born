@@ -98,4 +98,10 @@ describe('test/framework.test.js', () => {
         .finally(done);
     });
   });
+
+  describe('extend', () => {
+    it('filter.auth', () => {
+      assert(!!app.auth);
+    });
+  });
 });

@@ -25,6 +25,14 @@ describe('test/framework.test.js', () => {
       .expect(200);
   });
 
+  it('should GET /foo', () => {
+    return app
+      .httpRequest()
+      .get('/foo')
+      .expect('hi bar')
+      .expect(200);
+  });
+
   describe('cache.redis', () => {
     it('set/get string', done => {
       const key = 'cache.redis.string';

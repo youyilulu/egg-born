@@ -6,8 +6,14 @@ class HomeController extends Controller {
   async index() {
     const key = 'greet';
     await this.service.test.set(key, { hello: 'cache redis' });
+    console.log(this.service.test);
     const data = await this.service.test.get(key);
     this.ctx.body = data.hello;
+  }
+
+  async foo() {
+    const data = await this.service.rpcFoo.foo();
+    this.ctx.body = data;
   }
 }
 

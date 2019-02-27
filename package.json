@@ -9,7 +9,8 @@
     "egg-passport": "^2.0.1",
     "egg-passport-jwt": "../egg-passport-jwt",
     "is-type-of": "^1.2.1",
-    "redis": "~2.8.0"
+    "redis": "~2.8.0",
+    "sofa-rpc-node": "^1.7.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -49,7 +50,8 @@
     "index.js",
     "lib",
     "app",
-    "config"
+    "config",
+    "app.js"
   ],
   "eslintIgnore": [
     "coverage",
